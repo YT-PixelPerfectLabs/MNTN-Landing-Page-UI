@@ -12,7 +12,7 @@ Here’s a preview of the **MNTN - Landing Page**:
 
 A modern travel website UI built with HTML, CSS, and JavaScript, inspired by the
 
-[Jadoo Travel Figma Design](https://www.figma.com/community/file/788675347108478517).
+[MNTN - Landing Page Figma Design](https://www.figma.com/community/file/788675347108478517).
 
 ## Features
 
@@ -23,7 +23,7 @@ A modern travel website UI built with HTML, CSS, and JavaScript, inspired by the
 ## Design Reference
 
 This project is based on the Figma design available here:
-[Jadoo Travel Figma File](https://www.figma.com/community/file/788675347108478517)
+[MNTN - Landing Page Figma File](https://www.figma.com/community/file/788675347108478517)
 
 ## Getting Started
 
