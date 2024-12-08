@@ -8,7 +8,7 @@ if (headerMenu && burgerMenu) {
     burgerMenu.classList.toggle("is-active");
     headerMenu.classList.toggle("menu-is-active");
     document.body.classList.toggle("overflow-hidden");
-    document.body.setAttribute("data-lenis-prevent","");
+    document.body.setAttribute("data-lenis-prevent", "");
   });
 
   headerBackdrop.addEventListener("click", function () {
@@ -55,9 +55,11 @@ gsap.ticker.lagSmoothing(0);
 const heroTitle = document.querySelectorAll(".hero-title span");
 const heroSubtitle = document.querySelector(".hero-subtitle");
 const heroAction = document.querySelector(".hero-action");
+const sliderListItem = document.querySelectorAll(".slider-list-item");
+const sliderProgress = document.querySelector(".slider-progress");
 
 gsap.fromTo(
-  [heroSubtitle, heroTitle, heroAction],
+  [heroSubtitle, heroTitle, heroAction, sliderListItem],
   {
     autoAlpha: 0,
     y: 100,
@@ -69,13 +71,18 @@ gsap.fromTo(
     stagger: 0.2,
   }
 );
-
-heroAction.addEventListener("click", () => {
-  gsap.to(window, {
-    duration: 0.5,
-    scrollTo: { y: ".content-section", offsetY: -300 },
-  });
-});
+gsap.fromTo(
+  sliderProgress,
+  {
+    autoAlpha: 0,
+    y: "100",
+  },
+  {
+    autoAlpha: 1,
+    y: "0",
+    delay: 1
+  }
+);
 
 gsap
   .timeline({
@@ -178,4 +185,10 @@ contentWrapper.forEach((contentWrapper) => {
       },
       "0"
     );
+});
+
+gsap.to(".slider-progress-bar", {
+  height: "100%",
+  ease: "none",
+  scrollTrigger: { scrub: 0.3 },
 });

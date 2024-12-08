@@ -598,3 +598,45 @@ footer {
 }
 
 /* Footer Section End   */
+
+.slider {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 9;
+}
+
+.slider .container {
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  justify-content: flex-end;
+  max-width: 1500px;
+}
+
+.slider-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 15px 0;
+}
+
+.slider-list-item a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.slider-progress {
+  height: auto;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slider-progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}

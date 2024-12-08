@@ -128,7 +128,7 @@
     </header>
 
     <main>
-      <section class="hero-section section">
+      <section class="hero-section section" id="section-00">
         <div class="hero-image-wrapper">
           <img src="./images/sky.png" class="sky" alt="" />
           <img src="./images/mountains.png" class="mountains" alt="" />
@@ -141,7 +141,7 @@
             <span>Be prepared for the</span> <br />
             <span>Mountains and beyond!</span>
           </h1>
-          <a href="javascript:void(0);" class="hero-action">
+          <a href="#section-01" class="hero-action">
             Scroll down
             <svg
               width="16"
@@ -161,7 +161,7 @@
 
       <section class="content-section section">
         <div class="container">
-          <div class="content-wrapper">
+          <div class="content-wrapper" id="section-01">
             <div class="content-row">
               <div class="content-image">
                 <img src="./images/step-1.png" alt="" />
@@ -197,7 +197,7 @@
               </div>
             </div>
           </div>
-          <div class="content-wrapper">
+          <div class="content-wrapper" id="section-02">
             <div class="content-row">
               <div class="content-image">
                 <img src="./images/step-2.png" alt="" />
@@ -237,7 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="content-wrapper">
+          <div class="content-wrapper" id="section-03">
             <div class="content-row">
               <div class="content-image">
                 <img src="./images/step-3.png" alt="" />
@@ -279,6 +279,28 @@
           </div>
         </div>
       </section>
+
+      <nav class="slider">
+        <div class="container">
+          <ul class="slider-list">
+            <li class="slider-list-item">
+              <a href="#section-00">Start</a>
+            </li>
+            <li class="slider-list-item">
+              <a href="#section-01">01</a>
+            </li>
+            <li class="slider-list-item">
+              <a href="#section-02">02</a>
+            </li>
+            <li class="slider-list-item">
+              <a href="#section-03">03</a>
+            </li>
+          </ul>
+          <div class="slider-progress">
+            <div class="slider-progress-bar" style="height: 20%;"></div>
+          </div>
+        </div>
+      </nav>
     </main>
 
     <!-- Footer -->
