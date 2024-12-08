@@ -1,0 +1,282 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .menu-block-link {
+    font-size: 17px;
+  }
+
+  .menu-block-btn {
+    padding: 9px 22px;
+  }
+
+  /* Hero Section Start   */
+
+  .hero-image-wrapper img.sky {
+    margin-top: -25%;
+    transform: translateY(10%);
+    height: auto;
+  }
+
+  .hero-image-wrapper img.mountains {
+    margin-top: -10%;
+    height: auto;
+  }
+
+  .hero-image-wrapper img.man-standing {
+    margin-top: -58%;
+    height: auto;
+  }
+
+  /* Hero Section End   */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Hero Section Start   */
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-subtitle::before {
+    height: 2px;
+    width: 50px;
+  }
+
+  .hero-title {
+    font-size: 66px;
+    line-height: 70px;
+  }
+
+  /* Hero Section End   */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    padding: 0 80px;
+  }
+
+  .header-container {
+    padding: 0 80px;
+  }
+
+  /* Header Navigation Start   */
+
+  .navbar {
+    padding: 64px 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .on-scroll .navbar {
+    padding: 24px 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .burger {
+    display: none;
+    visibility: hidden;
+  }
+
+  .brand svg {
+    max-width: 108px;
+  }
+
+  .menu {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    box-shadow: none;
+    top: unset;
+    left: 0;
+    right: unset;
+    transform: unset;
+  }
+
+  .menu-inner {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin: 0 auto;
+    padding: 0;
+    row-gap: 0;
+  }
+
+  .menu-block {
+    margin-left: 86px;
+    column-gap: 50px;
+  }
+
+  .header-backdrop,
+  .menu-header {
+    display: none;
+  }
+
+  .menu-block-link:hover,
+  .menu-link:hover {
+    color: #fbd784;
+  }
+
+  /* Header Navigation End   */
+
+  /* Hero Section Start   */
+
+  .hero-section {
+    max-height: unset;
+    padding-bottom: 200px;
+    max-height: unset;
+  }
+
+  .hero-section::after {
+    height: 60%;
+  }
+
+  .hero-content {
+    padding: 0 80px;
+    z-index: 3;
+    top: 14%;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-subtitle::before {
+    height: 2px;
+    width: 72px;
+  }
+
+  .hero-title {
+    font-size: 88px;
+    line-height: 100px;
+  }
+
+  .hero-image-wrapper img.sky {
+    transform: translateY(40%);
+  }
+
+  /* Hero Section End   */
+
+  .content-wrapper .content-image {
+    width: auto;
+  }
+
+  .content-image img {
+    width: 566px;
+    height: auto;
+  }
+
+  .content-wrapper:nth-child(odd) .content-image {
+    order: 2;
+  }
+
+  .content-wrapper:nth-child(odd) .content-content {
+    order: 1;
+  }
+
+  .content-wrapper:not(:last-child) {
+    margin-bottom: 200px;
+  }
+
+  .content-wrapper:nth-child(1) .content-subtitle {
+    margin-bottom: 208px;
+  }
+
+  .content-subtitle::before {
+    height: 2px;
+    width: 72px;
+  }
+
+  .content-section {
+    margin-top: -30%;
+  }
+
+  .content-content {
+    padding-left: 50px;
+  }
+
+  .content-image img {
+    width: 466px;
+    height: auto;
+  }
+
+  .content-row {
+    gap: 75px;
+    flex-direction: row;
+  }
+
+  .content-subtitle {
+    font-size: 18px;
+  }
+
+  .content-title {
+    font-size: 54px;
+  }
+
+  .content-copy {
+    font-size: 18px;
+  }
+
+  .content-subtitle .counter {
+    font-size: 240px;
+    left: -20%;
+    transform: translateY(-50%);
+  }
+
+  footer {
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+
+  .footer-row {
+    gap: 100px;
+    flex-direction: row;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .content-content {
+    padding-left: 100px;
+  }
+
+  .content-row {
+    gap: 85px;
+  }
+
+  .content-subtitle .counter {
+    left: -20%;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .content-content {
+    padding-left: 150px;
+  }
+
+  .content-image img {
+    width: 566px;
+    height: auto;
+  }
+
+  .content-row {
+    gap: 114px;
+  }
+
+  .content-title {
+    font-size: 64px;
+  }
+
+  .content-subtitle .counter {
+    left: -40%;
+  }
+
+  .footer-row {
+    gap: 200px;
+  }
+}
